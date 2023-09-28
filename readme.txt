@@ -11,7 +11,8 @@ Brutescrape | A web scraper for generating password files based on plain text fo
 Written by Peter Kim <Author, The Hacker Playbook>
                      <CEO, Secure Planet LLC>
 
-Usage | python brutescrape.py
+Usage | python brutescrape.py [site_list].scrape
+	python brutescrape.py [site_list].scrape [Output_PassFile].txt
 ====================================================================================
 
 < About >
@@ -39,11 +40,9 @@ Usage | python brutescrape.py
 
 	Using the script is simple. The target webpage(s) should be listed in your "sites.scrape" file like so-
 
-		http://www.site.com,http://www.site2.com,http://www.site3.com/index.php,http://www.site4.com/admin
+		http://www.site.com,http://www.site2.com
+		http://www.site3.com/index.php,http://www.site4.com/admin
 
-	Then run the script-
-
-		python brutescrape.py
-
+	Then run the script- like said above
 	And that's it. The target sites defined in your "sites.scrape" file will be parsed through and the parsed words will be written to a file
 	named "passwordList.txt". 
